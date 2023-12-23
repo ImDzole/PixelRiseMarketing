@@ -15,7 +15,7 @@
   align-items: center;
   padding:25px;
   min-height: 100vh;
-  background: linear-gradient(90deg, #2ecc71 60%, #27ae60 40.1%);
+  background: linear-gradient(90deg, #252323 60%, #252323 40.1%);
 }
 
 .container form{
@@ -82,12 +82,19 @@
   width: 100%;
   padding:12px;
   font-size: 17px;
-  background: #429665;
-  color:#fff;
+  background: #000000;
+  color:#ffffff;
   margin-top: 5px;
   cursor: pointer;
+  text-decoration: none;
+  display: block;
+  text-align: center;
 }
 
 .container form .submit-btn:hover{
-  background: #2ecc71;
+  background: #020202;
+}
+
+.Ili {
+  text-align: center;
 }
