@@ -7,22 +7,95 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c6bfb09bc6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>PixelRise Marketing | Home</title>
 </head>
+<style>
+    .membership{
+    background: var(---black);
+    color: var(---white);
+    padding: 6rem calc(2rem, 5vh, 3rem);
+    text-align: center;
+    
+}
+
+.membership h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5vh, 3rem);
+    padding: 0 1rem;
+}
+
+.membership_desc{
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 3vh, 1.5rem);
+    padding: 1rem;
+}
+
+.membership_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.membership_card{
+    padding: 2rem;
+    min-height: 450px;
+    width: 325px;
+    background: var(---white);
+    color: var(---black);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.membership_perks{
+    min-height: 150px;
+}
+
+.membership_card p {
+    margin-bottom: 1rem;
+}
+
+.card_icon{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(---red);
+}
+
+.membership_card h3 {
+    font-size: clamp(1rem, 5vh, 2rem);
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .membership_wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .membership_card{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
+</style>
 <body>
     <!-- Navbar Section -->
     <nav class="navbar">
-        <a href="/" class="navbar_logo">PixelRise Marketing</a>
+        <a href="index.html" class="navbar_logo">PixelRise Marketing</a>
         <div class="navbar_toogle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
         <div class="navbar_menu">
-            <a href="/" class="navbar_link">Home</a>
-            <a href="/Servicies.html" class="navbar_link">Servicies</a>
-            <a href="/Plans.html" class="navbar_link">Membership Plans</a>
+            <a href="index.html" class="navbar_link">Home</a>
+            <a href="Servicies.html" class="navbar_link">Servicies</a>
+            <a href="Plans.html" class="navbar_link">Membership Plans</a>
+            <a href="OurTeam.html" class="navbar_link">Our Team</a>
+            <a href="" class="navbar_link">AboutUs</a>
         </div>
     </nav>
     <!-- Membership Section -->
@@ -36,13 +109,13 @@
                 <div class="membership_title">
                     <i class="fa-solid fa-camera card_icon"></i>
                     <h3>PixelRise</h3>
-
                 </div>
                 <div class="membership_perks">
                     <p>Get Access Of Our Features.</p>
+                    <p>Fast service.</p>
                     <p>$2500 per project</p>
                 </div>
-                <a href="/payment.html" class="button">Get Started</a>
+                <a href="payment.html" class="button">Get Started</a>
             </div>
             
         </div>
@@ -57,9 +130,9 @@
             </div>
             <div class="footer_links">
                 <h2 class="footer_title">Contact Us</h2>
-                <a href="/Servicies.html" class="footer_link">Contact</a>
-                <a href="/Servicies.html" class="footer_link">Support</a>
-                <a href="/Servicies.html" class="footer_link">Sponsorships</a>
+                <a href="Servicies.html" class="footer_link">Contact</a>
+                <a href="Servicies.html" class="footer_link">Support</a>
+                <a href="Servicies.html" class="footer_link">Sponsorships</a>
             </div>
         </div>
         <div class="footer_wrapper">
