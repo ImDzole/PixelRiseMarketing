@@ -11,12 +11,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c6bfb09bc6.js" crossorigin="anonymous"></script>
-    <link rel="Website Icon" type="x-icon" href="/LogoOfficeResized.png">
     <link rel="stylesheet" href="style.css">
     <link rel="Website Icon" type="x-icon" href="/LogoOfficeResized.png">
-    <title>PixelRise Marketing | Home</title>
+    <title>PixelRise Marketing | Contact Form</title>
 </head>
 <body>
+    <!--Snow-->
+    <div id="snow"></div>
     <!-- Navbar Section -->
     <nav class="navbar">
         <a href="index.html" class="navbar_logo">PixelRise Marketing</a>
@@ -33,66 +34,103 @@
             <a href="" class="navbar_link">AboutUs</a>
         </div>
     </nav>
-    <!-- About Us Section -->
-    <div class="about_us">
-        <div class="title">
-            <h1>About Us</h1>
-        </div>
-        <div>
-            <p class="invisible-p">.</p>
-            <p class="text">Ovde ce biti text o PixelRise Marketing :D</p>
+    <!-- Contact Form -->
+    <div class="contact">
+        <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get In Touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="8272ee61-4956-45e4-ad04-0a737ab19c31">
+            <input type="text" name="name" placeholder="Your Name." class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email." class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message." class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
         </div>
     </div>
-    <!-- Our Team Section-->
-    <section class="team">
-		<div class="center">
-			<h1>Our Team</h1>
-		</div>
 
-		<div class="team-content">
-			<div class="box">
-				<img src="01.png">
-				<h3>Luka Kostić</h3>
-				<h5>Owner</h5>
-				<div class="icons">
-					<a href="https://twitter.com/PixelriseM57583"><i class="ri-twitter-fill"></i></a>
-					<a href="#"><i class="ri-facebook-box-fill"></i></a>
-					<a href="https://www.instagram.com/kosticluka.98"><i class="ri-instagram-fill"></i></a>
-				</div>
-			</div>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-			<div class="box">
-				<img src="03.png">
-				<h3>Nataša Đurović</h3>
-				<h5>Advertiser</h5>
-				<div class="icons">
-					<a href="#"><i class="ri-twitter-fill"></i></a>
-					<a href="#"><i class="ri-facebook-box-fill"></i></a>
-					<a href="#"><i class="ri-instagram-fill"></i></a>
-				</div>
-			</div>
+        .contact{
+            font-family: 'Outfit';
+            background: linear-gradient(black, black);
+        }
 
-			<div class="box">
-				<img src="Filip3d.jpg">
-				<h3>Filip Marković</h3>
-				<h5>Designer</h5>
-				<div class="icons">
-                </div>
-			</div>
+        .contact-container{
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-			<div class="box">
-				<img src="ImDzole3D.jpg">
-				<h3>Đorđe Kuzmanović</h3>
-				<h5>IT</h5>
-				<div class="icons">
-                    <a href="https://discord.gg/M7cKH3mn"><i class="fa-brands fa-discord"></i></a>
-                    <a href="mailto:dzoleofficall@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.roblox.com/groups/17276758/Quartum-Studios#!/about"><i class="fa-solid fa-user-group"></i></a>
-                </div>
-			</div>
+        .contact-left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
 
-		</div>
-	</section>
+        .contact-left-title{
+            color: white;
+            font-weight: 600;
+            font-size: 40px;
+            margin-bottom: 25px
+        }
+
+        .contact-left-title hr{
+            height: 5px;
+            background-color: white;
+        }
+
+        .contact-inputs{
+            width: 400px;
+            height: 50px;
+            border: none;
+            outline: none;
+            padding-left: 25px;
+            font-weight: 500;
+            color: #666;
+            border-radius: 20px;
+        }
+
+        .contact-left textarea{
+            height: 140px;
+            padding-top: 15px;
+            border-radius: 20px;
+        }
+
+        .contact-inputs:focus{
+            border: 2px solid black;
+        }
+
+        .contact::placeholder{
+            color: white;
+        }
+
+        .contact-left button{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            pad: 15px 30px;
+            font-size: 16px;
+            color: #fff;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(270deg, #ff994f, #fa6d86);
+            cursor: pointer;
+        }
+
+
+    </style>
     <!-- Footer Section -->
     <div class="footer">
         <div class="footer_wrapper">
@@ -124,6 +162,6 @@
             </div>
         </div>
     </div>
-    <script src="Beta.js"></script>
+    <script src="app.js"></script>
 </body> 
 </html>
