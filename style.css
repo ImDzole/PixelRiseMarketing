@@ -533,18 +533,5 @@ form {
     color: var(---red);
     justify-content: right;
     align-items: right;
-    margin: 1rem 5rem;
+    margin: 1rem 4rem;
 }
-
-/* Snow Decoration */
-
-#snow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: 1000;
-}
-
