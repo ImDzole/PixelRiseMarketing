@@ -39,14 +39,14 @@
         <div class="contact-container">
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div class="contact-left-title">
-                <h2>Get In Touch</h2>
-                <hr>
+                <h2 class="animate-form">Get In Touch</h2>
+                <hr class="animate-form">
             </div>
             <input type="hidden" name="access_key" value="8272ee61-4956-45e4-ad04-0a737ab19c31">
-            <input type="text" name="name" placeholder="Your Name." class="contact-inputs" required>
-            <input type="email" name="email" placeholder="Your Email." class="contact-inputs" required>
-            <textarea name="message" placeholder="Your Message." class="contact-inputs" required></textarea>
-            <button type="submit">Submit</button>
+            <input type="text" name="name" placeholder="Your Name." class="contact-inputs animate-form" required>
+            <input type="email" name="email" placeholder="Your Email." class="contact-inputs animate-form" required>
+            <textarea name="message" placeholder="Your Message." class="contact-inputs animate-form" required></textarea>
+            <button type="submit" class="animate-form">Submit</button>
         </form>
         </div>
     </div>
@@ -162,6 +162,8 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="app.js"></script>
 </body> 
 </html>

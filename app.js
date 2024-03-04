@@ -54,3 +54,40 @@ gsap.from('.animate-card', {
     stagger: 0.3,
     delay: 0.5
 });
+
+gsap.from('.animate-form', {
+    ScrollTrigger: '.animate-form',
+    duration: 3.6,
+    opacity: 0,
+    y: -150,
+    stagger: 0.3,
+    delay: 0.5
+});
+
+gsap.from('.animate-aboutus', {
+    ScrollTrigger: '.animate-aboutus',
+    duration: 3.6,
+    opacity: 0,
+    y: -150,
+    stagger: 0.3,
+    delay: 0.5
+});
+
+gsap.from('.animate-ourteam', {
+    ScrollTrigger: '.animate-ourteam',
+    duration: 3.6,
+    opacity: 0,
+    y: -150,
+    stagger: 0.3,
+    delay: 0.5
+});
+
+gsap.from('.animate-email', {
+    ScrollTrigger: '.animate-email',
+    duration: 3.6,
+    opacity: 0,
+    y: -150,
+    stagger: 0.3,
+    delay: 0.5
+});
+
