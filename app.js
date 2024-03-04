@@ -10,3 +10,47 @@ const mobileMenu = () => {
 }
 
 menu.addEventListener('click', mobileMenu)
+
+// Adding Animations
+
+gsap.registerPlugin(ScrollTrigger)
+
+gsap.from('.animate-hero', {
+    duration: 3.6,
+    opacity: 0,
+    y: -150,
+    stagger: 0.3
+});
+
+gsap.from('.animate-services', {
+    ScrollTrigger: '.animate-services',
+    duration: 3.6,
+    opacity: 1,
+    y: -150,
+    stagger: 0.12,
+});
+
+gsap.from('.animate-img', {
+    ScrollTrigger: '.animate-services',
+    duration: 3.6,
+    opacity: 1,
+    x: -200,
+});
+
+gsap.from('.animate-membership', {
+    ScrollTrigger: '.animate-membership',
+    duration: 3.6,
+    opacity: 0,
+    y: -150,
+    stagger: 0.3,
+    delay: 0.5
+});
+
+gsap.from('.animate-card', {
+    ScrollTrigger: '.animate-card',
+    duration: 3.6,
+    opacity: 0,
+    y: -150,
+    stagger: 0.3,
+    delay: 0.5
+});
