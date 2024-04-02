@@ -373,6 +373,8 @@
 		font-size: 3.2rem;
 	}
 }
+
+
 /* Email Section */
 .email{
     background: linear-gradient(
@@ -534,4 +536,16 @@ form {
     justify-content: right;
     align-items: right;
     margin: 1rem 4rem;
+}
+
+/* Blaze Quest */
+
+.blaze_quest {
+    color: var(---red);
+    display: flex;
+    flex-direction: column;
+}
+
+.blaze_quest:hover {
+    color: var(---white);
 }

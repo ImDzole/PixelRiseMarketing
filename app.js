@@ -11,7 +11,7 @@ const mobileMenu = () => {
 
 menu.addEventListener('click', mobileMenu)
 
-// Adding Animations
+// Adding Animations (Like Decorations)
 
 gsap.registerPlugin(ScrollTrigger)
 
