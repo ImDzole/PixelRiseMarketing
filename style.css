@@ -538,6 +538,10 @@ form {
     margin: 1rem 4rem;
 }
 
+.contact_email:hover{
+    color: var(---white);
+}
+
 /* Blaze Quest */
 
 .blaze_quest {
