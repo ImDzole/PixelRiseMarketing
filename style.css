@@ -32,6 +32,7 @@
     color: var(---red);
     font-size: 1.75rem;
     padding-left: 0.75rem;
+    transition: all 0.3s ease-in-out ;
 }
 
 .navbar_link{
@@ -546,6 +547,7 @@ form {
 
 .contact_email:hover{
     color: var(---white);
+    transition: all 0.3s ease-in-out;
 }
 
 /* Blaze Quest */
