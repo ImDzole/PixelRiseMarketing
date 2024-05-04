@@ -14,7 +14,7 @@ menu.addEventListener('click', mobileMenu)
 // Function List
 
 function ConnectFunction() {
-     document.getElementById("blaze   
+     document.getElementById("cyxen.lounge").textContent = `Cyxen Lounge`
 }
 // Adding Animations (Like Decorations)
 
