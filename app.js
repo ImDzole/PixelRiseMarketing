@@ -11,11 +11,6 @@ const mobileMenu = () => {
 
 menu.addEventListener('click', mobileMenu)
 
-// Function List
-
-function ConnectFunction() {
-     document.getElementById("cyxen.lounge").textContent = `Cyxen Lounge`
-}
 // Adding Animations (Like Decorations)
 
 gsap.registerPlugin(ScrollTrigger)
