@@ -284,6 +284,7 @@
 .title h1{
     color: var(---white);
     text-align: center;
+    text-decoration: underline var(---red);
 }
 
 .text{
@@ -560,4 +561,10 @@ form {
 
 .blaze_quest:hover {
     color: var(---white);
+}
+
+#Hear{
+    color: white;
+    text-align: center;
+    padding: 15px;
 }

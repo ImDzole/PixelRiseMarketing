@@ -1,3 +1,5 @@
+// Mobile Menu | PC menu
+
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar_menu')
 const navLogo = document.querySelector('#navbar_logo')
@@ -10,6 +12,15 @@ const mobileMenu = () => {
 }
 
 menu.addEventListener('click', mobileMenu)
+
+// Scripting
+
+let Register_Button;
+let LogIn_Button;
+
+Register_Button = document.getElementById("")
+LogIn_Button = document.getElementById("")
+
 
 // Adding Animations (Like Decorations)
 
