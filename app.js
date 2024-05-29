@@ -49,7 +49,7 @@ gsap.from('.animate-img', {
 });
 
 gsap.from('.animate-membership', {
-    ScrollTrigger: '.animate-membership',
+    ScrollTrigger: '.animate-img',
     duration: 3.6,
     opacity: 0,
     y: -150,
@@ -58,7 +58,7 @@ gsap.from('.animate-membership', {
 });
 
 gsap.from('.animate-card', {
-    ScrollTrigger: '.animate-card',
+    ScrollTrigger: '.animate-membership',
     duration: 3.6,
     opacity: 0,
     y: -150,
@@ -67,7 +67,7 @@ gsap.from('.animate-card', {
 });
 
 gsap.from('.animate-form', {
-    ScrollTrigger: '.animate-form',
+    ScrollTrigger: '.animate-card',
     duration: 3.6,
     opacity: 0,
     y: -150,
@@ -76,7 +76,7 @@ gsap.from('.animate-form', {
 });
 
 gsap.from('.animate-aboutus', {
-    ScrollTrigger: '.animate-aboutus',
+    ScrollTrigger: '.animate-form',
     duration: 3.6,
     opacity: 0,
     y: -150,
@@ -85,7 +85,7 @@ gsap.from('.animate-aboutus', {
 });
 
 gsap.from('.animate-ourteam', {
-    ScrollTrigger: '.animate-ourteam',
+    ScrollTrigger: '.animate-aboutus',
     duration: 3.6,
     opacity: 0,
     y: -150,
@@ -94,11 +94,13 @@ gsap.from('.animate-ourteam', {
 });
 
 gsap.from('.animate-email', {
-    ScrollTrigger: '.animate-email',
+    ScrollTrigger: '.animate-ourteam',
     duration: 3.6,
     opacity: 0,
     y: -150,
     stagger: 0.3,
     delay: 0.5
 });
+
+// Server Storage | Speed Optimization
 
