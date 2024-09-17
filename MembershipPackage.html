@@ -13,11 +13,9 @@
     <script src="https://kit.fontawesome.com/c6bfb09bc6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles.css">
     <link rel="Website Icon" type="x-icon" href="LogoOfficeResized.png">
-    <title>PixelRise Marketing | Contact Form</title>
+    <title>PixelRise Marketing | Membership Check</title>
 </head>
 <body>
-    <!-- Winter Edition -->
-    <div id="snow"></div>
     <!-- Autumn Edition -->
     <div class="falling-leaves"></div>
     <!-- Navbar Section -->
@@ -35,100 +33,98 @@
             <a href="AboutUs.html" class="navbar_link">About Us</a>
         </div>
     </nav>
-    <!-- Contact Form -->
-    <div class="contact">
-        <div class="contact-container">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-            <div class="contact-left-title">
-                <h2 class="animate-form" style="color: white;">Get In Touch</h2>
-                <hr class="animate-form">
-            </div>
+    <!-- Membership Contact Form -->
+    <div class="contact-form-container">
+        <h1>Membership Inquiry</h1>
+        <form id="membership-form" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="8272ee61-4956-45e4-ad04-0a737ab19c31">
-            <input type="text" name="name" placeholder="Your Name." class="contact-inputs animate-form" required>
-            <input type="email" name="email" placeholder="Your Email." class="contact-inputs animate-form" required>
-            <textarea name="message" placeholder="Your Message." class="contact-inputs animate-form" required></textarea>
-            <button type="submit" class="animate-form">Submit</button>
-        </form>
-        </div>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+               <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Choose a Package</label>
+               <select id="message" name="message" required>
+                    <option value="" disabled selected>Select a package</option>
+                       <option value="Basic - $999.99/month">Basic - $999.99/month</option>
+                        <option value="Premium - $1999.99/month">Premium - $1999.99/month</option>
+                        <option value="Professional - $2499.99/month">Professional - $2499.99/month</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
     </div>
-
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
+        /* Basic styling for the contact form */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #202020; /* Updated background color */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-        .contact{
-            font-family: 'Outfit';
-            background: linear-gradient(#202020, #202020);
-        }
+.contact-form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff; /* Updated text color for visibility */
+}
 
-        .contact-container{
-            height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.form-group {
+    margin-bottom: 15px;
+}
 
-        .contact-left{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff; /* Updated label color for visibility */
+}
 
-        .contact-left-title{
-            color: white;
-            font-weight: 600;
-            font-size: 40px;
-            margin-bottom: 25px
-        }
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555; /* Slightly lighter border color for better visibility */
+    border-radius: 4px;
+    background-color: #333; /* Background color of inputs */
+    color: #fff; /* Text color of inputs */
+}
 
-        .contact-left-title hr{
-            height: 5px;
-            background-color: white;
-        }
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
 
-        .contact-inputs{
-            width: 400px;
-            height: 50px;
-            border: none;
-            outline: none;
-            padding-left: 25px;
-            font-weight: 500;
-            color: #666;
-            border-radius: 20px;
-        }
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        .contact-left textarea{
-            height: 140px;
-            padding-top: 15px;
-            border-radius: 20px;
-        }
-
-        .contact-inputs:focus{
-            border: 2px solid black;
-        }
-
-        .contact::placeholder{
-            color: white;
-        }
-
-        .contact-left button{
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            pad: 15px 30px;
-            font-size: 16px;
-            color: #fff;
-            gap: 10px;
-            border: none;
-            border-radius: 50px;
-            background: linear-gradient(270deg, #ff994f, #fa6d86);
-            cursor: pointer;
-        }
+button:hover {
+    background-color: #0056b3;
+}
 
 
     </style>
@@ -163,6 +159,7 @@
             </div>
         </div>
     </div>
-    <script src="Index.js"></script>
-</body> 
+<script src="Index.js"></script>
+</body>
 </html>
+</body>
